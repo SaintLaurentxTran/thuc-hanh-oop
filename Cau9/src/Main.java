@@ -17,7 +17,7 @@ public class Main {
             fare = 5000 + 29 * 4000 + (soKm - 30) * 3000;
         }
 
-        System.out.println("Số tiền phải trả cho " + soKm + " km la: " + fare + "d");
+        System.out.printf("Số tiền phải trả cho " + soKm + " km la: " + fare + "d");
 
         scanner.close();
     }

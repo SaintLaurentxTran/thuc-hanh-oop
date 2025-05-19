@@ -25,24 +25,19 @@ public class Main {
                 System.out.println("Phương trình bậc nhất có nghiệm: x = " + x);
             }
         } else {
-            // Tính biệt thức delta
             double delta = b * b - 4 * a * c;
 
-            // Biện luận phương trình bậc 2 dựa trên delta
             if (delta > 0) {
-                // Hai nghiệm phân biệt
                 double x1 = (-b + Math.sqrt(delta)) / (2 * a);
                 double x2 = (-b - Math.sqrt(delta)) / (2 * a);
                 System.out.println("Phương trình có hai nghiệm phân biệt:");
                 System.out.println("Nghiệm 1: x1 = " + x1);
                 System.out.println("Nghiệm 2: x2 = " + x2);
             } else if (delta == 0) {
-                // Một nghiệm kép
                 double x = -b / (2 * a);
                 System.out.println("Phương trình có một nghiệm kép:");
                 System.out.println("Nghiệm: x = " + x);
             } else {
-                // Hai nghiệm phức
                 double realPart = -b / (2 * a);
                 double imaginaryPart = Math.sqrt(-delta) / (2 * a);
                 System.out.println("Phương trình có hai nghiệm phức:");

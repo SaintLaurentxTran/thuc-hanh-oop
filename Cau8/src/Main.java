@@ -15,10 +15,10 @@ public class Main {
             System.out.println("Nhap vao mot nam: ");
             int nam = sc.nextInt();
             if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0) {
-                System.out.println("Nam " + nam + " la nam nhuan.");
+                System.out.println("Nam " + nam + " la nam nhuan co 29 ngay.");
             }
             else {
-                System.out.println("Nam " + nam + " khong phai la nam nhuan.");
+                System.out.println("Nam " + nam + " khong phai la nam nhuan co 28 ngay.");
             }
         }
         else {
@@ -27,3 +27,4 @@ public class Main {
 
     }
 }
+
